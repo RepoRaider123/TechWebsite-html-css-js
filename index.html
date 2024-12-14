@@ -1,137 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c1b6dc617e.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on mobile devices -->
+    <title>Tech Website</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet"> <!-- Link to Google Fonts -->
+    <script src="https://kit.fontawesome.com/c1b6dc617e.js" crossorigin="anonymous"></script> <!-- Link to Font Awesome for icons -->
 </head>
 <body>
-    <!-- Navbar Section -->
+     <!-- Modal Structure (Popup window displayed when website is under construction) -->
+     <div id="underConstructionModal" class="modal">
+        <div class="modal-content">
+            <h2>Website Under Construction</h2> <!-- Title of the modal -->
+            <p>This website is currently under construction. Some features may not be responsive, It is intended solely to showcase my work and skills, and is not fully functional.</p> <!-- Information inside the modal -->
+            <button id="closeModal">Close</button> <!-- Close button to hide the modal -->
+        </div>
+    </div>
+
+    <!-- Navbar Section (Navigation bar at the top of the page) -->
     <nav class="navbar">
         <div class="navbar__container">
-            <a href="/" id="navbar__logo">
+            <a href="/" id="navbar__logo"> <!-- Link to the homepage with the logo -->
                 <i class="fa-regular fa-gem"></i>OMNIX</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+            <div class="navbar__toggle" id="mobile-menu"> <!-- Button for mobile menu toggle -->
+                <span class="bar"></span> <!-- Hamburger menu icon part 1 -->
+                <span class="bar"></span> <!-- Hamburger menu icon part 2 -->
+                <span class="bar"></span> <!-- Hamburger menu icon part 3 -->
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item">
-                    <a href="/" class="navbar__link">Home</a>
+                    <a href="/" class="navbar__link">Home</a> <!-- Link to Home -->
                 </li>
                 <li class="navbar__item">
-                    <a href="/tech.html" class="navbar__link">Tech</a>
+                    <a href="/" class="navbar__link">Tech</a> <!-- Link to Tech page -->
                 </li>
                 <li class="navbar__item">
-                    <a href="/" class="navbar__link">Products</a>
+                    <a href="/" class="navbar__link">Products</a> <!-- Link to Products page -->
                 </li>
                 <li class="navbar__btn">
-                    <a href="/" class="button">Sign Up</a>
+                    <a href="/" class="button">Sign Up</a> <!-- Sign Up button -->
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- Hero Section -->
+
+    <!-- Hero Section (Main section with large image and text on the homepage) -->
      <div class="main">
         <div class="main__container">
             <div class="main__content">
-                <h1>OMNIX GENERATION</h1>
-                <h2>TECHNOLOGY</h2>
-                <p>Technology for a Smarter Future.</p>
-                <button class="main__btn"><a href="/">Get Started</a></button>
+                <h1>OMNIX GENERATION</h1> <!-- Main heading -->
+                <h2>TECHNOLOGY</h2> <!-- Subheading -->
+                <p>Technology for a Smarter Future.</p> <!-- Short description -->
+                <button class="main__btn"><a href="/">Get Started</a></button> <!-- Button to get started -->
             </div>
             <div class="main__img--container">
-                <img src="images/pic1.svg" alt="pic" id="main__img">
+                <img src="images/pic1.svg" alt="pic" id="main__img"> <!-- Image related to technology -->
             </div>
         </div>
      </div>
 
-     <!-- Services Section -->
+     <!-- Services Section (Displays services offered) -->
       <div class="services">
-        <h1>Explore the sensation</h1>
+        <h1>Explore the sensation</h1> <!-- Heading for the services section -->
         <div class="services__container">
             <div class="services__card">
-                <h2>Embrace seamless innovation</h2>
-                <p> AI Powered Technology</p>
-                <button class="services__btn"><a href="/">Get Started</a></button>
+                <h2>Embrace seamless innovation</h2> <!-- Service title -->
+                <p> AI Powered Technology</p> <!-- Service description -->
+                <button class="services__btn"><a href="/">Get Started</a></button> <!-- Button to start the service -->
             </div>
             <div class="services__card">
-                <h2>Are you Ready?</h2>
-                <p>Take the Leap</p>
-                <button class="services__btn"><a href="/">Get Started</a></button>
+                <h2>Are you Ready?</h2> <!-- Service title -->
+                <p>Take the Leap</p> <!-- Service description -->
+                <button class="services__btn"><a href="/">Get Started</a></button> <!-- Button to start the service -->
             </div>
         </div>
       </div>
 
-      <!-- Footer Section -->
+      <!-- Footer Section (Contains footer with links and social media icons) -->
        <div class="footer__container">
         <div class="footer__link">
             <div class="footer__link--wrapper">
                 <div class="footer__link--item">
-                    <h2>About Us</h2>
-                    <a href="/">How it Works</a>
-                    <a href="/">Testimonals</a>
-                    <a href="/">Careers</a>
-                    <a href="/">Investments</a>
-                    <a href="/">Terms of Service</a>
+                    <h2>About Us</h2> <!-- Section heading for About Us links -->
+                    <a href="/">How it Works</a> <!-- Link to "How it Works" page -->
+                    <a href="/">Testimonals</a> <!-- Link to Testimonials page -->
+                    <a href="/">Careers</a> <!-- Link to Careers page -->
+                    <a href="/">Investments</a> <!-- Link to Investments page -->
+                    <a href="/">Terms of Service</a> <!-- Link to Terms of Service page -->
                 </div>
                 <div class="footer__link--item">
-                    <h2>Contact Us</h2>
-                    <a href="/">Contact</a>
-                    <a href="/">Support</a>
-                    <a href="/">Destinations</a>
-                    <a href="/">Sponsorships</a>
+                    <h2>Contact Us</h2> <!-- Section heading for Contact Us links -->
+                    <a href="/">Contact</a> <!-- Link to Contact page -->
+                    <a href="/">Support</a> <!-- Link to Support page -->
+                    <a href="/">Destinations</a> <!-- Link to Destinations page -->
+                    <a href="/">Sponsorships</a> <!-- Link to Sponsorships page -->
                 </div>
             </div>
             <div class="footer__link--wrapper">
                 <div class="footer__link--item">
-                    <h2>Videos</h2>
-                    <a href="/">Submit Video</a>
-                    <a href="/">Ambassadors</a>
-                    <a href="/">Agencies</a>
-                    <a href="/">Influencers</a>
+                    <h2>Videos</h2> <!-- Section heading for Videos links -->
+                    <a href="/">Submit Video</a> <!-- Link to submit a video -->
+                    <a href="/">Ambassadors</a> <!-- Link to Ambassadors page -->
+                    <a href="/">Agencies</a> <!-- Link to Agencies page -->
+                    <a href="/">Influencers</a> <!-- Link to Influencers page -->
                 </div>
                 <div class="footer__link--item">
-                    <h2>Social Media</h2>
-                    <a href="/">Facebook</a>
-                    <a href="/">Instagram</a>
-                    <a href="/">X-Twitter</a>
-                    <a href="/">LinkedIn</a>
-                    <a href="/">Youtube</a>
+                    <h2>Social Media</h2> <!-- Section heading for Social Media links -->
+                    <a href="/">Facebook</a> <!-- Link to Facebook -->
+                    <a href="/">Instagram</a> <!-- Link to Instagram -->
+                    <a href="/">X-Twitter</a> <!-- Link to Twitter (formerly X) -->
+                    <a href="/">LinkedIn</a> <!-- Link to LinkedIn -->
+                    <a href="/">Youtube</a> <!-- Link to YouTube -->
                 </div>
             </div>
         </div>
         <div class="social__media">
             <div class="social__media--wrap">
                 <div class="footer__logo">
-                    <a href="/" id="footer__logo"><i class="fa-regular fa-gem"></i>OMNIX</a>
+                    <p><i class="fa-regular fa-gem"></i>OMNIX</p> <!-- Footer logo -->
                 </div>
-                <p class="website__rights">2024 © All rights reserved.</p>
+                <p class="website__rights">2024 © All rights reserved.</p> <!-- Copyright text -->
                 <div class="social__icon">
                     <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-facebook"></i> <!-- Facebook icon -->
                     </a>
                     <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-instagram"></i> <!-- Instagram icon -->
                     </a>
                     <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-x-twitter"></i> <!-- Twitter (X) icon -->
                     </a>
                     <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-linkedin"></i> <!-- LinkedIn icon -->
                     </a>
                     <a href="/" class="social__icon--link" target="_blank">
-                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-youtube"></i> <!-- YouTube icon -->
                     </a>
                 </div>
             </div>
         </div>
        </div>
 
-    <script src="app.js"></script>
+    <script src="app.js"></script> <!-- Link to the external JavaScript file -->
 </body>
 </html>
