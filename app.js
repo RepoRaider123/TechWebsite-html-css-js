@@ -1,7 +1,7 @@
 // Wait for the webpage to fully load before running this code
 document.addEventListener('DOMContentLoaded', function() {
     // Step 1: Get the modal (popup) and the close button from the page
-    const modal = document.getElementById('underConstructionModal'); // This is the popup
+    const modal = document.getElementById('underDevelopmentModal'); // This is the popup
     const closeModalButton = document.getElementById('closeModal'); // This button closes the popup
 
     // Step 2: Show the modal automatically when the page loads
